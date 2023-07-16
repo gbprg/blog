@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.brand {
+  font-size: 1.5rem;
+}
+.brand span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.links_list {
+  display: flex;
+  list-style: none;
+}
+.links_list li {
+  margin-right: 1rem;
+}
+.links_list li a {
+  padding: 0.75rem 2rem;
+}
+.active {
+  background: #563b3b;
+  color: #fff;
+}
