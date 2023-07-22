@@ -13,6 +13,8 @@ import { AuthProvider } from "./Context/AuthContext";
 import { useState, useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { useAuthentication } from "./hooks/useAuthentication";
+import CreatePost from "./pages/CreatePost";
+import DashBoard from "./pages/DashBoard";
 
 export default function App() {
   const [user, setUser] = useState(undefined);
@@ -42,6 +44,8 @@ export default function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/Login" element={<Login />} />
                 <Route path="/Register" element={<Register />} />
+                <Route path="/posts/create" element={<CreatePost />} />
+                <Route path="/dashboard" element={<DashBoard />} />
               </Routes>
             </div>
             <Footer />
