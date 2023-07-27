@@ -1,0 +1,20 @@
+.about {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about h2 {
+  margin-bottom: 0.5rem;
+}
+.about p {
+  color: #fafafa;
+  margin-bottom: 0.75rem;
+}
+
+.about a {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}

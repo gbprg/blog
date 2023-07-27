@@ -42,10 +42,22 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/Login" element={<Login />} />
-                <Route path="/Register" element={<Register />} />
-                <Route path="/posts/create" element={<CreatePost />} />
-                <Route path="/dashboard" element={<DashBoard />} />
+                <Route
+                  path="/Login"
+                  element={!user ? <Login /> : <Navigate to="/" />}
+                />
+                <Route
+                  path="/Register"
+                  element={!user ? <Register /> : <Navigate to="/" />}
+                />
+                <Route
+                  path="/posts/create"
+                  element={user ? <CreatePost /> : <Navigate to="/login" />}
+                />
+                <Route
+                  path="/dashboard"
+                  element={user ? <DashBoard /> : <Navigate to="/login" />}
+                />
               </Routes>
             </div>
             <Footer />
