@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import PostDetail from "../../components/PostDetail";
@@ -25,7 +25,7 @@ export default function Home() {
           />
           <button className="btn btn-dark">Pesquisar</button>
         </form>
-        <div>
+        <div className={styles.posts}>
           {loading && <p>Carregando...</p>}
           {posts &&
             posts.map((post) => <PostDetail key={post.id} post={post} />)}

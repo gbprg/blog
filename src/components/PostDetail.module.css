@@ -1,0 +1,13 @@
+.post_detail {
+  margin-bottom: 1rem;
+}
+.post_detail img {
+  max-width: 600px;
+}
+.post_detail h2 {
+  margin-bottom: 1.5rem;
+}
+.post_detail .tags {
+  margin-bottom: 1rem;
+  display: flex;
+}

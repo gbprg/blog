@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { redirect, useNavigate } from "react-router-dom";
 import { useAuthValue } from "../../Context/AuthContext";
 import { useInsertDocument } from "../../hooks/useInsertDocument";
 
@@ -10,16 +10,17 @@ export default function CreatePost() {
   const [image, setImage] = useState("");
   const [body, setBody] = useState("");
   const [tags, setTags] = useState([]);
+  const navigate = useNavigate();
   const [formError, setFormError] = useState("");
 
   const { user } = useAuthValue();
   const { insertDocument, response } = useInsertDocument("posts");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setFormError("");
 
-    insertDocument({
+    await insertDocument({
       title,
       image,
       body,
@@ -27,6 +28,7 @@ export default function CreatePost() {
       uid: user.uid,
       createdBy: user.displayName,
     });
+    navigate("/");
   };
 
   return (
