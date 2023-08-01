@@ -35,7 +35,7 @@ export default function Home() {
           {posts &&
             posts.map((post) => <PostDetail key={post.id} post={post} />)}
           {posts && posts.length === 0 && (
-            <div className={styles.noposts}>
+            <div className="noposts">
               <p>Nenhum post encontrado</p>
               <Link to="/posts/create" className="btn">
                 Criar primeiro post

@@ -1,0 +1,43 @@
+.dashboard {
+  text-align: center;
+  display: center;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.dashboard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.dashboard p {
+  margin-bottom: 1rem;
+}
+.post_header,
+.post_row {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+.post_header {
+  font-weight: bold;
+  border: 2px solid #563b3b;
+}
+.post_row {
+  border-bottom: 1px solid #563b3b;
+}
+.post_row p {
+  color: #fff;
+}
+.post_row button,
+.post_row a {
+  width: 100px;
+  font-size: 0.7rem;
+}
+.button_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}

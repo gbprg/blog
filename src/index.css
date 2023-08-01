@@ -107,3 +107,12 @@ button[disabled] {
   padding: 0.5rem;
   margin: 1rem 0;
 }
+.noposts {
+  text-align: center;
+}
+.noposts p {
+  margin-bottom: 1rem;
+}
+.noposts a {
+  padding: 10px 25px;
+}
