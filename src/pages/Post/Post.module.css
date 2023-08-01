@@ -1,0 +1,18 @@
+.post_container {
+  text-align: center;
+}
+.post_container h3,
+h1,
+img {
+  margin-bottom: 1rem;
+}
+.post_container .tags {
+  display: flex;
+  justify-content: center;
+}
+.tags p {
+  margin-right: 0.5rem;
+}
+.tags span {
+  font-weight: bold;
+}
