@@ -1,0 +1,13 @@
+.search_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.search_container h1,
+p {
+  margin-bottom: 1rem;
+}
+.noposts {
+  text-align: center;
+}

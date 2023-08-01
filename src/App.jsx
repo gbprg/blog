@@ -15,6 +15,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useAuthentication } from "./hooks/useAuthentication";
 import CreatePost from "./pages/CreatePost";
 import DashBoard from "./pages/DashBoard";
+import Search from "./pages/Search";
 
 export default function App() {
   const [user, setUser] = useState(undefined);
@@ -42,6 +43,7 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/search" element={<Search />} />
                 <Route
                   path="/Login"
                   element={!user ? <Login /> : <Navigate to="/" />}
