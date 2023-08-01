@@ -57,6 +57,7 @@ export default function App() {
                   path="/posts/edit/:id"
                   element={user ? <EditPost /> : <Navigate to="/login" />}
                 />
+                <Route path="/posts/:id" element={<Home />} />;
                 <Route
                   path="/posts/create"
                   element={user ? <CreatePost /> : <Navigate to="/login" />}

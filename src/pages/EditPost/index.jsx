@@ -18,22 +18,20 @@ export default function EditPost() {
   const [formError, setFormError] = useState("");
   const navigate = useNavigate();
 
+  useEffect(() => {
+    if (post) {
+      setTitle(post.title || "");
+      setImage(post.image || "");
+      setBody(post.body || "");
+      setTags(post.tags || "");
+    }
+  }, [post]);
+
   const { user } = useAuthValue();
   const { updateDocument } = useUpdateDocument("posts");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    useEffect(() => {
-      if (post) {
-        setTitle();
-        setImage();
-        setBody();
-
-        const textTags = tagsArray.join(",");
-        setTags(textTags);
-      }
-    }, [post]);
 
     // validando url da imagem
     try {
