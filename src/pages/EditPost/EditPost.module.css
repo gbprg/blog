@@ -1,0 +1,15 @@
+.edit_post {
+  text-align: center;
+}
+
+.edit_post p {
+  margin-bottom: 1rem;
+}
+.edit_post .preview_title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.image_preview {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
