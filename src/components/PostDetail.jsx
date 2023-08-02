@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 import styles from "./PostDetail.module.css";
-import { useEffect, useState } from "react";
 
 export default function PostDetail({ post }) {
   const [imageUrl, setImageUrl] = useState("");
 
   useEffect(() => {
     setImageUrl(post.image);
-  }, []);
+  }, [post]);
 
   return (
     <>
@@ -21,9 +21,9 @@ export default function PostDetail({ post }) {
         <h2>{post.title}</h2>
         <p>{post.createdBy}</p>
         <div className={styles.tags}>
-          {post?.tagsArray?.map((tag) => (
+          {post.tagsArray?.map((tag) => (
             <p key={tag}>
-              <span>{tag}</span>
+              <span>#</span>
               {tag}
             </p>
           ))}

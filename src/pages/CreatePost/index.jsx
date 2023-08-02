@@ -80,7 +80,7 @@ export default function CreatePost() {
             value={tags}
           />
         </label>
-        {!response.loading && <button className="btn">Cadastrar</button>}
+        {!response.loading && <button className="btn">Criar Post</button>}
         {response.loading && (
           <button className="btn" disabled>
             Aguarde...

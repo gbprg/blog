@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <NavLink to="/" className={styles.brand}>
-        <span>Firebase</span>
+        <span>Moments of the world</span>
       </NavLink>
       <ul className={styles.links_list}>
         <li>
