@@ -1,3 +1,29 @@
+
+### Executando o projeto
+
+1. Clonar este repositório:
+   <br />
+  ```
+   $ git clone https://github.com/gbprg/blog.git
+```
+3. Entre na pasta que você clonou
+   <br />
+   ```
+      $ cd projetos
+   ```
+4. Instale as dependências:
+   <br />
+   ```
+      $ npm install
+   ```
+5. Execute o projeto
+   <br />
+   ```
+      $ npm run dev
+   ```
+
+Viva! O projeto está em execução.
+
 # Esta aplicação é um blog feito com react e firebase.
 O foco desta aplicação é fazer o back end e o banco de dados com firebase, neste projeto usei React Router, Hooks, Context, Firebase, Autenticação.
 Como o foco desta aplicação é o Firebase, não me preocupei em fazer o responsivo do projeto... Espero que gostem!!!
